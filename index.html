@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>GlowingSkin Elixir Landing</title> <!--Title for the landing web Page-->
+</head>
+
+<body>
+    <header> <!-- Heading Section of Web Page which shows the Name of our product-->
+        <h1>GlowingSkin Elixir</h1>
+        <p>Your Path to Radiant Skin</p>
+    </header>
+
+    <main>
+        <section class="product"> <!-- Shows image and description of the product-->
+            <img src="heroimage.jpg" alt="GlowingSkin Elixir">
+            <p>Experience the transformative power of GlowingSkin Elixir – your ultimate solution for achieving luminous
+                and healthy-looking skin. Our carefully crafted formula, enriched with natural botanicals and
+                antioxidants, nourishes and revitalizes your skin, leaving you with a radiant complexion that glows from
+                within.</p>
+            <p>Unlock the secret to timeless beauty with GlowingSkin Elixir today!</p>
+        </section>
+
+        <section class="contact"> <!-- Form creation for the contacting purpose -->
+            <h2>Contact Us</h2>
+            <form id="contact-form" action="submit.php" method="post">
+                <label for="name">Name:</label> <!-- Takes name as input -->
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label> <!-- Takes email as input -->
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label> <!-- User can submit message -->
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <div id="thank-you-message" style="display: none;">Thank you for reaching out!</div>
+            <!-- Says thankyou after form submission -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 GlowingSkin Elixir. All rights reserved.</p> <!-- Footer section of the webpage -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
